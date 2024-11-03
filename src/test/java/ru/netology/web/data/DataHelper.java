@@ -1,6 +1,6 @@
 package ru.netology.web.data;
 
-import org.checkerframework.checker.units.qual.C;
+import lombok.Value;
 
 import java.util.Random;
 
@@ -32,12 +32,13 @@ public class DataHelper {
         return new Random().nextInt(Math.abs(balance)) + 1;
     }
 
+    @Value
     public static class CardInfo {
         String cardNumber;
         String testId;
-
     }
 
+    @Value
     public static class AuthInfo {
         String login;
         String password;
