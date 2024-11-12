@@ -28,7 +28,7 @@ public class TransferPage {
 
      public void makeTransfer(String amountToTransfer, DataHelper.CardInfo cardInfo) {
          amountInput.setValue(amountToTransfer);
-         amountInput.setValue(cardInfo.getCardNumber());
+         fromInput.setValue(cardInfo.getCardNumber());
          transferButton.click();
      }
 

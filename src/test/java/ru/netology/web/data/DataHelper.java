@@ -32,6 +32,10 @@ public class DataHelper {
         return new Random().nextInt(Math.abs(balance)) + 1;
     }
 
+    public static int generateInvalidAmount(int balance) {
+        return Math.abs(balance) + new Random().nextInt(10000) + 1;
+    }
+
     @Value
     public static class CardInfo {
         String cardNumber;
